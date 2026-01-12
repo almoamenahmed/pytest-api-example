@@ -30,7 +30,6 @@ def test_find_by_status_200(status):
     
     for pet in pets:
         assert pet["status"] == status
-        
         validate(instance=pet, schema=schemas.pet)
 
 @pytest.mark.parametrize("pet_id", [(999), (-1), (3)])

@@ -18,3 +18,16 @@ pet = {
         },
     }
 }
+
+order = {
+    "type": "object",
+    "required": ["id", "pet_id"],
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "pet_id": {
+            "type": "integer"
+        }
+    }
+}
